@@ -8,7 +8,7 @@ Repository for Web Development and Designing Internship at Oasis Infobyte.
  link: https://monumental-piroshki-271d2d.netlify.app
  
 # Task 2: TRIBUTE PAGE
-  skill:HTML, CSS, JS
+  skill:HTML, CSS
   
  link: https://chic-kelpie-e9bb0b.netlify.app
  
