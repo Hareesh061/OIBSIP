@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class = "display">
+                <input id="screen" type="text" placeholder="0" >
+            </div>
+
+            
+            <div class="btns">
+                
+                <div class="row">
+                    <button id="br" class="btn">(</button>
+                    <button id="br" class="btn">)</button>
+                    <button id="cl" onclick="screen.value=eval(screen.value)">ans</button>
+                    <button id="cl" onclick="backspc()">del</button>
+                    <button id="cl" onclick="screen.value=''">clear</button>
+                </div>
+            
+                <div class="row">
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button id="br" class="btn">%</button>
+                    <button id="br" onclick="sqrt()">√</button>
+                </div>  
+
+                <div class="row">
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button id="br" class="btn">*</button>
+                    <button id="br" class="btn">/</button>
+                </div>
+            
+                <div class="row">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button id="br" class="btn">+</button>
+                    <button id="br" class="btn">-</button>
+                </div>   
+
+                <div  class="row">
+                    <button class="btn">.</button>
+                    <button class="btn">0</button>
+                    <button id="br" onclick="pow()">^</button>
+                    <button id="cl1" onclick="screen.value=eval(screen.value)">=</button>
+                
+                </div>   
+
+            </div>
+    </div>
+   
+</body>
+<script src="script.js"></script>
+</html>
