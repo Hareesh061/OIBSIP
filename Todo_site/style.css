@@ -1,0 +1,118 @@
+
+
+
+body{
+  background-image: url(https://www-cdn.eumetsat.int/files/styles/16_9_large/s3/2020-11/ASpot_SeaLevel.jpg?h=d1cb525d&itok=z3VAWwDp);
+}
+  
+  .div{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif; 
+    position: absolute;
+    top: 0;
+    left:90px;
+    
+  }
+  .container{
+   top:60px;
+    left:90px;
+    position: absolute;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .addTask{
+    width:100% ;
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .addTask > input[type="text"]{
+    width:200px;
+    height: 30px;
+  }
+
+.addTask button{
+  margin: 0 10px;
+  background: rgb(38, 34, 34);
+  color: rgb(235, 230, 230);
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notcompleted, .completed{
+  margin: 5px 0;
+  padding: 20px;
+  top: 0%;
+  left: 450px;
+  position: relative;
+ 
+}
+
+h3{
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(39, 33, 126);
+}
+
+ol{
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+ol li{
+  width: 500px;
+  padding: 18px;
+  margin: 5px 0;
+  background: rgb(232, 148, 112);
+  font-size: 19px;
+  counter-increment: my-counter;
+}
+ol.completed li{
+  background: rgb(90, 201, 149);
+
+}
+
+ol li::before{
+  content:counter(my-counter);
+  background: rgb(28, 23, 23);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display:inline-block;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+li button{
+  float:right;
+  padding: 6px;
+  margin-right: 1px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.div {
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(206, 61, 129), 0 0 30px #426de3, 0 0 40px #1717c9, 0 0 50px #840f4f, 0 0 60px #b7205a, 0 0 70px #ec76d6;
+  }
+  
+  to {
+    text-shadow: 0 0  20px rgb(255, 255, 255), 0 0 30px #c139b8, 0 0 40px #8b3254, 0 0 50px #8b1f5c, 0 0 60px #8580ba, 0 0 70px #ec28a1, 0 0 80px #df283a;
+  }
+}
